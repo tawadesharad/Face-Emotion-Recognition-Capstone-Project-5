@@ -69,7 +69,7 @@ And then we perform Real Time Prediction on our best model using webcam on Googl
   - Real Time prediction
 #### Step 3. Deployment
 
-And lastly we will deploy it on three different plateform
+And lastly we will deploy it on two different plateform
 
    -  Streamlit Share
    -  Heroku
