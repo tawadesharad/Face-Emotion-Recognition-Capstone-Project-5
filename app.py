@@ -4,7 +4,7 @@ import streamlit as st
 from tensorflow import keras
 from tensorflow.keras.models import load_model
 from tensorflow.keras.preprocessing.image import img_to_array
-from streamlit_webrtc import webrtc_streamer, VideoTransformerBase
+from streamlit_webrtc import webrtc_streamer, VideoTransformerBase, RTCConfiguration, VideoProcessorBase, WebRtcMode
 
 # load model
 emotion_dict = ["Angry","Disgust","Fear","Happy","Neutral","Sad","Surprise"]
@@ -19,8 +19,12 @@ try:
     face_cascade = cv2.CascadeClassifier("haarcascade_frontalface_default.xml")
 except Exception:
     st.write("Error loading cascade classifiers")
+# Change
+RTC_CONFIGURATION = RTCConfiguration({"iceServers": [{"urls": ["stun:stun.l.google.com:19302"]}]})
+# change end
 
-class VideoTransformer(VideoTransformerBase):
+#  change - class VideoTransformer(VideoTransformerBase):
+class Faceemotion(VideoTransformerBase):
     def transform(self, frame):
         img = frame.to_ndarray(format="bgr24")
 
@@ -70,7 +74,8 @@ def main():
             st.write("1. Click Start to open your camera and give permission for prediction")
             st.write("2. This will predict your emotion.")
             st.write("3. When you done, click stop to end.")
-            webrtc_streamer(key="example", video_transformer_factory=VideoTransformer)
+            #  change - webrtc_streamer(key="example", video_transformer_factory=VideoTransformer)
+            webrtc_streamer(key="example", mode=WebRtcMode.SENDRECV, rtc_configuration=RTC_CONFIGURATION,video_processor_factory=Faceemotion)
             
         elif selectbox == "No":
             st.info("This will be fun, You may try it!. We are not saving your data. HAHA!")
