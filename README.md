@@ -104,6 +104,16 @@ The following photos and video contains the real time deploymnet of the app in l
 ![image](https://user-images.githubusercontent.com/85983864/160839498-0237948a-06b7-4fcf-9b32-9a15ad7506fc.png)
 
 
+## Deployment of Streamlit WebApp in Heroku and Streamlit
+
+We have created front-end using Streamlit for webapp and used streamlit-webrtc which helped to deal with real-time video streams. Image captured from the webcam is sent to VideoTransformer function to detect the emotion. Then this model was deployed on heroku platform with the help of buildpack-apt which is necessary to deploy opencv model on heroku.
+
+
+| Website | Link |
+| ------ | ------ |
+| Heroku | https://live-class-face-emotion.herokuapp.com/ |
+| Streamlit | https://share.streamlit.io/tawadesharad/face-emotion-recognition-capstone-project-5/main/app.py |
+
 ## Conclusion
 💪 trained the neural network and we achieved the highest validation accuracy of 66%.
 
