@@ -95,6 +95,7 @@ A Convolutional Neural Network (ConvNet/CNN) is a Deep Learning algorithm which 
 
 ## Realtime Local Video Face Detection
 The following photos and video contains the real time deploymnet of the app in local runtime 
+
 ![image](https://user-images.githubusercontent.com/85983864/160839340-050c4b9d-c81c-4d79-96fc-17eea561192d.png)
 ![image](https://user-images.githubusercontent.com/85983864/160839397-3b8487ab-6211-4743-85ed-4972fcd23836.png)
 ![image](https://user-images.githubusercontent.com/85983864/160839450-087342d6-49c8-4778-b19c-e4b9e785c484.png)
@@ -102,6 +103,13 @@ The following photos and video contains the real time deploymnet of the app in l
 ![image](https://user-images.githubusercontent.com/85983864/160839435-3eaad0c5-accc-4deb-859f-619dfe79824a.png)
 ![image](https://user-images.githubusercontent.com/85983864/160839538-990914f8-1219-4fdb-a4ba-a583feba45a5.png)
 ![image](https://user-images.githubusercontent.com/85983864/160839498-0237948a-06b7-4fcf-9b32-9a15ad7506fc.png)
+
+**Demo Video**
+
+
+
+https://user-images.githubusercontent.com/85983864/160988128-1eb21a06-92a2-4e33-ae5c-0e97504decc8.mp4
+
 
 
 ## Deployment of Streamlit WebApp in Heroku and Streamlit
